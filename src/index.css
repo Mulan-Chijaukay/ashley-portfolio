@@ -1,3 +1,25 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+:root {
+  --bg-deep: #080205;
+  --pink-glow: #ff2d95;
+  background-color: var(--bg-deep);
+  color: white;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Animación de estrellas mejorada */
+@keyframes starFloat {
+  0% { transform: translateY(0); opacity: 0.3; }
+  50% { opacity: 1; }
+  100% { transform: translateY(-20px); opacity: 0.3; }
+}
+
+.star-anim {
+  animation: starFloat var(--d) infinite ease-in-out;
+}
