@@ -26,7 +26,7 @@ export default function About() {
             Soy <span className="text-pink-500 font-bold">Ashley Misae Kuniyoshi Zambrano</span>, estudiante de Ingeniería de Software en la Universidad San Ignacio de Loyola, actualmente cursando el <span className="text-pink-500 font-bold">séptimo ciclo</span> y ubicada dentro del Quinto Superior.
           </p>
           <p>
-            Mi formación técnica se orienta al desarrollo Full Stack, con énfasis en la construcción de arquitecturas backend sólidas y el diseño de interfaces dinámicas e intuitivas. Me caracterizo por un enfoque analítico y orientado a resultados, buscando optimizar procesos y mejorar la eficiencia operativa mediante el uso de tecnologías modernas y buenas prácticas de desarrollo.
+            Mi formación se orienta al desarrollo Full Stack, con énfasis en la comprensión y construcción de lógica backend, así como en el diseño de interfaces funcionales y orientadas al usuario. Me interesa aplicar principios de arquitectura de software, organización de datos y buenas prácticas de desarrollo para crear soluciones eficientes y mantenibles en entornos académicos y profesionales.
           </p>
         </div>
       </section>

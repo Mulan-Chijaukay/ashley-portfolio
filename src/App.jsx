@@ -3,6 +3,10 @@ import Stars from './components/Stars';
 import Hero from './components/Hero';
 import About from './components/About';
 import Projects from './components/Projects';
+import Certificates from './components/Certificates';
+import CV from './components/CV';
+import Contact from './components/Contact';
+import Footer from './components/Footer'; 
 
 function App() {
   const [seccion, setSeccion] = useState('inicio');
@@ -40,15 +44,17 @@ function App() {
 
       {/* Solo se muestra el módulo seleccionado */}
       <main className="min-h-screen flex items-center justify-center pt-24 pb-12 px-6">
-        {seccion === 'inicio' && <Hero />}
+        
+        {seccion === 'inicio' && <Hero setSeccion={setSeccion} />}
         {seccion === 'sobre-mi' && <About />}
-        {seccion === 'proyectos' && (
-          <div className="w-full max-w-6xl animate-fade-in">
-            <h2 className="text-4xl md:text-6xl font-black mb-12 uppercase tracking-tighter text-center">Proyectos</h2>
-            <Projects />
-          </div>
-        )}
+        {seccion === 'certificados' && <Certificates />}
+        {seccion === 'proyectos' && <Projects />}
+        {seccion === 'cv' && <CV />}
+        {seccion === 'contacto' && <Contact />}
       </main>
+
+      <Footer />
+
     </div>
   );
 }
