@@ -1,12 +1,14 @@
 import React from 'react';
+import miFoto from '../assets/fotoinicio.jpeg';
 
-// Recibimos setSeccion para que el botón funcione
 export default function Hero({ setSeccion }) {
   return (
     <div className="min-h-screen pt-20 flex flex-col items-center justify-center max-w-7xl mx-auto px-6 animate-fade-in relative z-10">
       
-      {/* SECCIÓN SUPERIOR */}
+      {/* SECCIÓN SUPERIOR: TEXTOS Y FOTO */}
       <div className="flex flex-col md:flex-row items-center gap-12 md:gap-24 text-center md:text-left w-full mb-16">
+        
+        {/* LADO IZQUIERDO: TEXTOS */}
         <div className="flex-1">
           <h1 className="text-6xl md:text-8xl font-black text-white leading-[0.9] tracking-tighter uppercase mb-8 italic">
             Ashley Misae <br />
@@ -25,14 +27,19 @@ export default function Hero({ setSeccion }) {
           </div>
         </div>
         
-        {/* Círculo decorativo */}
+        {/* LADO DERECHO: TU FOTO */}
         <div className="w-64 h-64 md:w-[400px] md:h-[400px] rounded-full border-[15px] border-white/5 p-4 relative group shrink-0">
-          <div className="absolute inset-0 bg-pink-600 rounded-full blur-[100px] opacity-10 group-hover:opacity-20 transition-opacity duration-700"></div>
-          <div className="w-full h-full rounded-full bg-gradient-to-tr from-pink-600/10 to-transparent backdrop-blur-3xl flex items-center justify-center border border-white/10 overflow-hidden shadow-[0_0_60px_rgba(255,45,149,0.1)] transition-transform duration-500 group-hover:rotate-3">
-             <span className="text-7xl grayscale opacity-10 italic font-black select-none tracking-tighter">ASHLEY</span>
+          <div className="absolute inset-0 bg-pink-600 rounded-full blur-[100px] opacity-10 group-hover:opacity-25 transition-opacity duration-700"></div>
+          
+          <div className="w-full h-full rounded-full bg-gradient-to-tr from-pink-600/10 to-transparent backdrop-blur-3xl flex items-center justify-center border border-white/10 overflow-hidden shadow-[0_0_60px_rgba(255,45,149,0.2)] transition-transform duration-500 group-hover:scale-[1.02]">
+            <img 
+              src={miFoto} 
+              alt="Ashley Kuniyoshi" 
+              className="w-full h-full object-cover grayscale-[20%] contrast-[110%] group-hover:grayscale-0 group-hover:scale-110 transition-all duration-700"
+            />
           </div>
         </div>
-      </div>
+      </div> {/* <--- ESTE DIV ES EL QUE FALTABA CERRAR AQUÍ */}
 
       {/* SECCIÓN INTERMEDIA: APORTE */}
       <div className="w-full bg-white/5 border border-white/10 rounded-[50px] p-10 md:p-16 mb-16 backdrop-blur-md shadow-2xl">
@@ -44,7 +51,7 @@ export default function Hero({ setSeccion }) {
         </p>
       </div>
 
-      {/* SECCIÓN INFERIOR: IDIOMAS Y UBICACIÓN RESALTADOS */}
+      {/* SECCIÓN INFERIOR: IDIOMAS Y UBICACIÓN */}
       <div className="w-full flex flex-col md:flex-row items-center justify-between gap-10 border-t border-white/5 pt-12">
         <div className="flex gap-10 text-center md:text-left">
           <div className="flex flex-col">
@@ -53,14 +60,12 @@ export default function Hero({ setSeccion }) {
             <p className="text-white text-sm font-bold uppercase tracking-tighter">Inglés: Intermedio</p>
           </div>
 
-          {/* Ubicación ahora brilla igual que idiomas */}
           <div className="flex flex-col">
             <span className="text-pink-500 text-[10px] font-black uppercase tracking-[0.3em] mb-1">Ubicación</span>
             <p className="text-white text-sm font-bold uppercase tracking-tighter">Lima, Perú 🇵🇪</p>
           </div>
         </div>
 
-        {/* Botón de navegación */}
         <div className="flex flex-col items-center md:items-end gap-4">
           <button 
             onClick={() => setSeccion('contacto')} 
