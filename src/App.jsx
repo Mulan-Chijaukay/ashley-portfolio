@@ -14,7 +14,9 @@ function App() {
   const NavButton = ({ id, label }) => (
     <button 
       onClick={() => setSeccion(id)}
-      className={`transition-all duration-300 cursor-pointer whitespace-nowrap ${seccion === id ? 'text-pink-600 font-black scale-110' : 'text-gray-500 font-bold hover:text-pink-400'}`}
+      className={`transition-all duration-300 cursor-pointer whitespace-nowrap px-2 ${
+        seccion === id ? 'text-pink-600 font-black scale-105' : 'text-gray-500 font-bold hover:text-pink-400'
+      }`}
     >
       {label}
     </button>
@@ -24,14 +26,17 @@ function App() {
     <div className="min-h-screen text-white font-['Plus_Jakarta_Sans'] overflow-x-hidden">
       <Stars />
       
-      {/* Header con alto contraste */}
+      {/* HEADER RESPONSIVE */}
       <nav className="fixed top-0 w-full z-50 bg-[#f3f4f6] border-b border-gray-200 shadow-sm">
-        <div className="w-full px-6 md:px-12 py-5 flex justify-between items-center text-black">
-          <span className="font-black text-lg md:text-xl tracking-tighter uppercase whitespace-nowrap italic">
+        <div className="w-full max-w-7xl mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center text-black gap-4">
+          
+          {/* Nombre: Se hace más pequeño en móvil para que no ocupe todo */}
+          <span className="font-black text-sm md:text-xl tracking-tighter uppercase whitespace-nowrap italic text-center md:text-left">
             Ashley Misae <span className="text-pink-600 font-extrabold">Kuniyoshi Zambrano</span>
           </span>
           
-          <div className="flex gap-4 md:gap-10 text-[10px] md:text-xs uppercase tracking-widest overflow-x-auto no-scrollbar ml-4">
+          {/* Menú: overflow-x-auto permite deslizar con el dedo si los botones no caben */}
+          <div className="flex gap-4 md:gap-8 text-[10px] md:text-xs uppercase tracking-widest overflow-x-auto no-scrollbar w-full md:w-auto justify-center pb-2 md:pb-0">
             <NavButton id="inicio" label="Inicio" />
             <NavButton id="sobre-mi" label="Sobre Mí" />
             <NavButton id="certificados" label="Certificados" />
@@ -42,9 +47,8 @@ function App() {
         </div>
       </nav>
 
-      {/* Solo se muestra el módulo seleccionado */}
-      <main className="min-h-screen flex items-center justify-center pt-24 pb-12 px-6">
-        
+      {/* Contenido Principal: Ajustamos el padding-top (pt) para que el header no tape el contenido */}
+      <main className="min-h-screen flex items-center justify-center pt-32 md:pt-24 pb-12 px-6">
         {seccion === 'inicio' && <Hero setSeccion={setSeccion} />}
         {seccion === 'sobre-mi' && <About />}
         {seccion === 'certificados' && <Certificates />}
@@ -54,7 +58,6 @@ function App() {
       </main>
 
       <Footer />
-
     </div>
   );
 }
