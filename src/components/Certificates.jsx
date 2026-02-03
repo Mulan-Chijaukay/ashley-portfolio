@@ -6,55 +6,55 @@ const certifications = [
   {
     title: "Introduction to Cybersecurity",
     issuer: "CISCO Networking Academy",
-    image: "/ciscociber-page-001.jpg",
+    image: "/ashley-portfolio/ciscociber-page-001.jpg",
     color: "#00b4e5"
   },
   {
     title: "Scrum de la teoría a la práctica",
     issuer: "Netzun – Dionisio Romero University",
-    image: "/certificadoScrum-page-001.jpg",
+    image: "/ashley-portfolio/certificadoScrum-page-001.jpg",
     color: "#6da33f"
   },
   {
     title: "JavaScript Básico",
     issuer: "Netzun – Dionisio Romero University",
-    image: "/certificadoJS-page-001.jpg",
+    image: "/ashley-portfolio/certificadoJS-page-001.jpg",
     color: "#f7df1e"
   },
   {
     title: "Microsoft Excel de cero a avanzado",
     issuer: "Netzun – Dionisio Romero University",
-    image: "/especiaExcel-page-001.jpg",
+    image: "/ashley-portfolio/especiaExcel-page-001.jpg",
     color: "#217346"
   },
   {
     title: "SQL Especialización",
     issuer: "Netzun – Dionisio Romero University",
-    image: "/especiaSQL-page-001.jpg",
+    image: "/ashley-portfolio/especiaSQL-page-001.jpg",
     color: "#a91d22"
   },
   {
     title: "Habilidades Blandas",
     issuer: "Netzun – Dionisio Romero University",
-    image: "/especiaHabilidadesBlandas-page-001.jpg",
+    image: "/ashley-portfolio/especiaHabilidadesBlandas-page-001.jpg",
     color: "#ec4899"
   },
   {
     title: "Power Bi y Tableau",
     issuer: "Netzun – Dionisio Romero University",
-    image: "/especiaPowerBi-page-001.jpg",
+    image: "/ashley-portfolio/especiaPowerBi-page-001.jpg",
     color: "#F2C811"
   },
   {
     title: "Data Analytics",
     issuer: "Netzun – Dionisio Romero University",
-    image: "/especiaDataAnalytics-page-001.jpg",
+    image: "/ashley-portfolio/especiaDataAnalytics-page-001.jpg",
     color: "#06b6d4"
   },
   {
     title: "Programación en Python y Django",
     issuer: "Netzun – Dionisio Romero University",
-    image: "/especiaPythonDjango-page-001.jpg",
+    image: "/ashley-portfolio/especiaPythonDjango-page-001.jpg",
     color: "#3776ab"
   }
 ];

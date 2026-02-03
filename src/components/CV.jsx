@@ -1,8 +1,7 @@
 import React from 'react';
 
 export default function CV() {
-  // El parámetro #view=FitH es vital para que el PDF se estire a lo ancho
-  const cvPath = "/CV_Ashley_K_IngSoftware.pdf#view=FitH"; 
+  const cvPath = "/ashley-portfolio/CV_Ashley_K_IngSoftware.pdf#view=FitH";
 
   return (
     <div className="min-h-screen py-20 animate-fade-in relative z-10 flex flex-col items-center bg-[#050505]">
@@ -18,7 +17,7 @@ export default function CV() {
         
         <div className="w-full flex justify-center">
           <a 
-            href="/CV_Ashley_K_IngSoftware.pdf"
+            href="/ashley-portfolio/CV_Ashley_K_IngSoftware.pdf"
             download="CV_Ashley_K_IngSoftware.pdf"
             className="flex items-center justify-center gap-4 bg-pink-600 hover:bg-pink-500 text-white font-black py-5 px-10 rounded-full transition-all duration-300 transform hover:scale-105 shadow-[0_0_30px_rgba(219,39,119,0.6)] uppercase tracking-widest text-base md:text-lg w-full max-w-[340px]"
           >
